@@ -32,14 +32,14 @@ jobs:
 
       # Publish artifacts (e.g., JMeter results)
       - name: Upload JMeter Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: JMeterResults
           path: ./target/jmeter/results # Changed to relative path
 
 
       - name: Upload JMeter Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: JMeterResults
           path: ./target/jmeter/results
