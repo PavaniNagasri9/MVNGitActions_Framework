@@ -37,6 +37,14 @@ jobs:
           name: JMeterResults
           path: ./target/jmeter/results # Changed to relative path
 
+
+      - name: Upload JMeter Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: JMeterResults
+          path: ./target/jmeter/results
+
+
       # Publish test results
       - name: Publish JUnit Test Results
         uses: mikepenz/junit-report-action@v2
