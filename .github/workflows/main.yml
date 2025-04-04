@@ -1,0 +1,44 @@
+name: Performance Test Workflow
+
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  PerformanceTest:
+    runs-on: ubuntu-latest
+
+    env:
+      MAVEN_OPTS: '-Xmx1024m'
+
+    steps:
+      # Checkout the code
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      # Set up Java with explicit versioning
+      - name: Set Up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin' # Use Temurin distribution for Java
+          java-version: '17'     # Install the latest stable version (e.g., Java 17)
+
+      # Run Maven clean, compile, and verify with JMeter script
+      - name: Maven Clean Compile Verify
+        run: mvn clean compile verify -DJmeterScript=paymentgateway
+
+      # Run Maven pre-site with options
+      - name: Maven Pre-Site
+        run: mvn pre-site -DtrimStackTrace=false
+
+      # Publish artifacts (e.g., JMeter results)
+      - name: Upload JMeter Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: JMeterResults
+          path: ./target/jmeter/results # Changed to relative path
+
+      # Publish test results
+      - name: Publish JUnit Test Results
+        uses: mikepenz/junit-report-action@v2
+        with:
+          report_paths: ./junit.xml # Changed to relative path
