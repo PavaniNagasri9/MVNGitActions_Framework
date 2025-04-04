@@ -1,0 +1,182 @@
+<testSet>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_01_Authorize - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_01_Authorize</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_01_Authorize - Pass Rate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_01_Authorize</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_02_CreditSavedCard - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_02_CreditSavedCard</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_02_CreditSavedCard - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_02_CreditSavedCard</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_03_DebitSavedCard - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_03_DebitSavedCard</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_03_DebitSavedCard - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_03_DebitSavedCard</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_04_MarkForCapture - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_04_MarkForCapture</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_04_MarkForCapture - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_04_MarkForCapture</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_05_Void - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_05_Void</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_05_Void - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_05_Void</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_06_RefundEnquiry - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_06_RefundEnquiry</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_06_RefundEnquiry - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_06_RefundEnquiry</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_07_Authorize - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_07_Authorize</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>PaymentGateway_07_Authorize - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_07_Authorize</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_08_Rebate - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_08_Rebate</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>PaymentGateway_08_Rebate - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_08_Rebate</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_09_Credit - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_09_Credit</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>PaymentGateway_09_Credit - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_09_Credit</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_10_Debit - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_10_Debit</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>PaymentGateway_10_Debit - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_10_Debit</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_11_Void - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_11_Void</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+      <passedTransactionsTest>
+        <testName>PaymentGateway_11_Void - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_11_Void</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>PaymentGateway_12_ZeroAuth - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>PaymentGateway_12_ZeroAuth</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>10000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>PaymentGateway_12_ZeroAuth - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>PaymentGateway_12_ZeroAuth</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+</testSet>
