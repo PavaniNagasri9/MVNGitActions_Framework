@@ -43,8 +43,4 @@ jobs:
           path: ./target/jmeter/results # Changed to relative path
 
       
-      # Publish test results
-      - name: Publish JUnit Test Results
-        uses: mikepenz/junit-report-action@v3
-        with:
-          report_paths: ./junit.xml # Changed to relative path
+    
