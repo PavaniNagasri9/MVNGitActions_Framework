@@ -6,8 +6,10 @@
   <artifactId>payment</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+
   <build>
     <plugins>
+      <!-- JMeter Maven Plugin -->
       <plugin>
         <groupId>com.lazerycode.jmeter</groupId>
         <artifactId>jmeter-maven-plugin</artifactId>
@@ -15,9 +17,6 @@
         <configuration>
           <resultsFileFormat>csv</resultsFileFormat>
           <testResultsTimestamp>false</testResultsTimestamp>
-          <!--script
-          name passed in yml 
-          UnresolvedMavenProperty -->
           <jMeterTestFile>${JmeterScript}.jmx</jMeterTestFile>
           <propertiesUser>
             <jmeter.save.saveservice.print_field_names>true</jmeter.save.saveservice.print_field_names>
@@ -37,7 +36,6 @@
             <jmeter.save.saveservice.thread_name>true</jmeter.save.saveservice.thread_name>
             <jmeter.save.saveservice.time>true</jmeter.save.saveservice.time>
           </propertiesUser>
-
         </configuration>
         <executions>
           <!-- Generate JMeter configuration -->
@@ -63,6 +61,8 @@
           </execution>
         </executions>
       </plugin>
+
+      <!-- JMeter Lightning Maven Plugin -->
       <plugin>
         <groupId>uk.co.automatictester</groupId>
         <artifactId>jmeter-lightning-maven-plugin</artifactId>
@@ -80,6 +80,8 @@
           </execution>
         </executions>
       </plugin>
+
+      <!-- Maven Antrun Plugin -->
       <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>1.8</version>
@@ -104,18 +106,12 @@
             <id>pre-site</id>
             <phase>pre-site</phase>
             <configuration>
-              <!--updating
-              reporting configuration variable for dashboard -->
               <target>
                 <delete dir="${basedir}/target/jmeter/results/dashboard" />
                 <mkdir dir="${basedir}/target/jmeter/results/dashboard" />
                 <delete file="${basedir}/target/jmeter/bin/reportgenerator.properties" />
                 <copy file="${basedir}/src/test/resources/reportgenerator.properties"
                   tofile="${basedir}/target/jmeter/bin/reportgenerator.properties" />
-                <!--copy
-                todir="${basedir}/target/jmeter/bin/report-template">
-                                    <fileset dir="${basedir}/src/test/resources/report-template" />
-                                </copy-->
                 <delete file="${basedir}/target/jmeter/results/tmp/result.csv/" />
                 <copy todir="${basedir}/target/jmeter/results/tmp">
                   <fileset dir="${basedir}/target/jmeter/results/">
@@ -125,9 +121,6 @@
                 </copy>
                 <java jar="${basedir}/target/jmeter/bin/ApacheJMeter-5.1.1.jar" fork="true">
                   <arg value="-g" />
-                  <!--<arg
-                  value="${basedir}/target/jmeter/results/FraudAnalyticsOpPortalEarlyPerfTest.csv"
-                  />-->
                   <arg value="${basedir}/target/jmeter/results/tmp/result.csv" />
                   <arg value="-o" />
                   <arg value="${basedir}/target/jmeter/results/dashboard/" />
