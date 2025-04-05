@@ -25,13 +25,13 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin' # Use Temurin distribution for Java
-          java-version: '17'     # Install the latest stable version (e.g., Java 17)
+          java-version: '11'     # Install the latest stable version (e.g., Java 17)
 
 
       - name: Set up Maven
         uses: actions/setup-java@v2
         with:
-          java-version: '17'
+          java-version: '11'
           distribution: 'temurin'
 
       - name: Run JUnit tests
@@ -39,7 +39,7 @@ jobs:
 
       # Run Maven clean, compile, and verify with JMeter script
       - name: Maven Clean Compile Verify
-        run: mvn clean compile verify -DJmeterScript=paymentgateway
+        run: mvn clean compile verify -DJmeterScript=paymentgateway -X
 
       # Run Maven pre-site with options
       - name: Maven Pre-Site
