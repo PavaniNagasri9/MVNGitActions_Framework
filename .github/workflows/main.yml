@@ -27,6 +27,19 @@ jobs:
           distribution: 'temurin' # Use Temurin distribution for Java
           java-version: '17'     # Install the latest stable version (e.g., Java 17)
 
+
+      - name: Set up Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+
+      - name: Run JUnit tests
+        run: mvn test
+      
+      - name: Run JMeter tests
+        run: mvn verify -P jmeter
+
       # Run Maven clean, compile, and verify with JMeter script
       - name: Maven Clean Compile Verify
         run: mvn clean compile verify -DJmeterScript=paymentgateway
@@ -42,5 +55,6 @@ jobs:
           name: JMeterResults
           path: ./target/jmeter/results # Changed to relative path
 
-      
+
+    
     
