@@ -19,6 +19,8 @@
           <testResultsTimestamp>false</testResultsTimestamp>
           <jMeterTestFile>${JmeterScript}.jmx</jMeterTestFile>
           <propertiesUser>
+            <csvDataFile1>${project.basedir}/src/test/jmeter/CombinedLoad_FleetVRN_Run2.csv</csvDataFile1>
+            <csvDataFile2>${project.basedir}/src/test/jmeter/CombinedLoadTest_Testdata_Run2.csv</csvDataFile2>
             <jmeter.save.saveservice.print_field_names>true</jmeter.save.saveservice.print_field_names>
             <jmeter.save.saveservice.successful>true</jmeter.save.saveservice.successful>
             <jmeter.save.saveservice.label>true</jmeter.save.saveservice.label>
