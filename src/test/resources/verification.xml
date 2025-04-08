@@ -1,21 +1,21 @@
 <testSet>
     <nthPercRespTimeTest>
-        <testName>PaymentGateway_01_Authorize - 90 Percentile response time</testName>
+        <testName>AAhelp2_S01_T01_Breakdown_Launch URL - 90 Percentile response time</testName>
         <description>Verify 90th percentile</description>
         <transactionName>PaymentGateway_01_Authorize</transactionName>
-        <regexp />
+        <regexp />n
         <percentile>90</percentile>
         <maxRespTime>10000</maxRespTime>
     </nthPercRespTimeTest>
     <passedTransactionsTest>
-        <testName>PaymentGateway_01_Authorize - Pass Rate</testName>
+        <testName>AAhelp2_S01_T01_Breakdown_Launch URL - Pass Rate</testName>
         <description>Verify Pass Rate</description>
         <transactionName>PaymentGateway_01_Authorize</transactionName>
         <regexp />
         <allowedPercentOfFailedTransactions>1</allowedPercentOfFailedTransactions>
     </passedTransactionsTest>
     <nthPercRespTimeTest>
-        <testName>PaymentGateway_02_CreditSavedCard - 90 Percentile response time</testName>
+        <testName>AAhelp2_S01_T02_Breakdown_click Advanced search - 90 Percentile response time</testName>
         <description>Verify 90th percentile</description>
         <transactionName>PaymentGateway_02_CreditSavedCard</transactionName>
         <regexp />
@@ -23,7 +23,7 @@
         <maxRespTime>10000</maxRespTime>
     </nthPercRespTimeTest>
     <passedTransactionsTest>
-        <testName>PaymentGateway_02_CreditSavedCard - PassRate</testName>
+        <testName>AAhelp2_S01_T02_Breakdown_click Advanced search - PassRate</testName>
         <description>Verify Pass Rate</description>
         <transactionName>PaymentGateway_02_CreditSavedCard</transactionName>
         <regexp />
