@@ -39,7 +39,7 @@ jobs:
 
       # Run Maven clean, compile, and verify with JMeter script
       - name: Maven Clean Compile Verify
-        run: mvn clean compile verify -DJmeterScript=paymentgateway -X
+        run: mvn clean compile verify -DJmeterScript=RoadOps_AAhelp2_CombinedLoadTest -X
 
       # Run Maven pre-site with options
       - name: Maven Pre-Site
