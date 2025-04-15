@@ -76,7 +76,8 @@
             </goals>
             <configuration>
               <mode>verify</mode>
-              <testSetXml>src/test/resources/verification.xml</testSetXml>
+              <!-- Ensure this file exists and is correctly formatted -->
+              <testSetXml>${project.basedir}/src/test/resources/verification.xml</testSetXml>
               <jmeterCsv>${project.basedir}/target/jmeter/results/${JmeterScript}.csv</jmeterCsv>
             </configuration>
           </execution>
