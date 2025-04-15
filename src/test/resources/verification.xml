@@ -398,7 +398,7 @@
         <maxRespTime>10000</maxRespTime>
     </nthPercRespTimeTest>
      <passedTransactionsTest>
-        <testNameS04_T01_Closebreakdown - PassRate</testName>
+        <testName>S04_T01_Closebreakdown - PassRate</testName>
         <description>Verify Pass Rate</description>
         <transactionName>S04_T01_Closebreakdown</transactionName>
         <regexp />
