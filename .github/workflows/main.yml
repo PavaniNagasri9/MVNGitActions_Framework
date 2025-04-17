@@ -10,7 +10,7 @@ on:
 
 jobs:
   PerformanceTest:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     env:
       MAVEN_OPTS: '-Xmx1024m'
