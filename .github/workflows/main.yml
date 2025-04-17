@@ -33,7 +33,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-          maven-version: '4'
+          maven-version: '3.9.9'
           meter-lightning-maven-plugin: '2.4.0'
 
       - name: Run JUnit tests
