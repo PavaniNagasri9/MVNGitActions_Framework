@@ -33,7 +33,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-          maven-version: '3.9.9'
+          maven-version: '3'
 
       - name: Run JUnit tests
         run: mvn test
