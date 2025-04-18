@@ -1,9 +1,27 @@
 <testSet>
     <nthPercRespTimeTest>
-        <testName>S01_T01_Breakdown_Launch URL - 90 Percentile response time</testName>
+        <testName>S02_T01_launch FleetUI - 90 Percentile response time</testName>
         <description>Verify 90th percentile</description>
-        <transactionName>S01_T01_Breakdown_Launch URL</transactionName>
-        <regexp />n
+        <transactionName>S02_T01_launch FleetUI</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    
+<nthPercRespTimeTest>
+        <testName>S02_T02_Search FleetType - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S02_T02_Search FleetType</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     
+<nthPercRespTimeTest>
+        <testName>S02_T03_CheckBoookedvehicle Details - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S02_T03_CheckBoookedvehicle Details</transactionName>
+        <regexp />
         <percentile>90</percentile>
         <maxRespTime>30000</maxRespTime>
     </nthPercRespTimeTest>
