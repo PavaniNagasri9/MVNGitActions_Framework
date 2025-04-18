@@ -233,7 +233,7 @@ String name = &quot;${__RandomString(5,abcdstuvwz,)}&quot;;
 vars.put(&quot;C_name&quot;,name); </stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_T01_Breakdown_Launch URL">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_T01_Breakdown_Launch URL" enabled="false">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1430,7 +1430,7 @@ vars.put(&quot;C_name&quot;,name); </stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Thinktime" enabled="true">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Thinktime" enabled="false">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">${TT}</stringProp>
@@ -30979,7 +30979,7 @@ P&#x97;ç£°&#x12;&#x9f;â¤|&#x90;&#x0;5ûÇoÿ&#xb;òÚOë_î&#x3;&#x12;&#x5;
           <stringProp name="ActionProcessor.duration">${TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S02_T01_launch FleetUI" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S02_T01_launch FleetUI" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -33970,13 +33970,13 @@ P&#x97;ç£°&#x12;&#x9f;â¤|&#x90;&#x0;5ûÇoÿ&#xb;òÚOë_î&#x3;&#x12;&#x5;
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Thinktime" enabled="false">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Thinktime" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">${TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S02_T02_Search FleetType" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S02_T02_Search FleetType" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -34448,13 +34448,13 @@ P&#x97;ç£°&#x12;&#x9f;â¤|&#x90;&#x0;5ûÇoÿ&#xb;òÚOë_î&#x3;&#x12;&#x5;
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Thinktime" enabled="false">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Thinktime" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">${TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S02_T03_CheckBoookedvehicle Details" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S02_T03_CheckBoookedvehicle Details">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -35040,7 +35040,7 @@ P&#x97;ç£°&#x12;&#x9f;â¤|&#x90;&#x0;5ûÇoÿ&#xb;òÚOë_î&#x3;&#x12;&#x5;
           <stringProp name="ActionProcessor.duration">${TT}</stringProp>
         </TestAction>
         <hashTree/>
-        <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="false">
           <collectionProp name="AuthManager.auth_list">
             <elementProp name="" elementType="Authorization">
               <stringProp name="Authorization.url">https://agile-uat2.theaa.com/api/auth-service/getUserInformation</stringProp>
@@ -35071,13 +35071,13 @@ P&#x97;ç£°&#x12;&#x9f;â¤|&#x90;&#x0;5ûÇoÿ&#xb;òÚOë_î&#x3;&#x12;&#x5;
           <stringProp name="TestPlan.comments">818732/autOactive$03</stringProp>
         </AuthManager>
         <hashTree/>
-        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
           <collectionProp name="CookieManager.cookies"/>
           <boolProp name="CookieManager.clearEachIteration">true</boolProp>
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="false">
           <boolProp name="clearEachIteration">true</boolProp>
           <boolProp name="useExpires">true</boolProp>
           <boolProp name="CacheManager.controlledByThread">false</boolProp>
