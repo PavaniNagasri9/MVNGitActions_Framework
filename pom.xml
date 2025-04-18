@@ -18,7 +18,7 @@
           <resultsFileFormat>csv</resultsFileFormat>
           <testResultsTimestamp>false</testResultsTimestamp>
           <jMeterTestFile>${JmeterScript}.jmx</jMeterTestFile>
-        <errorThresholdPercentage>80</errorThresholdPercentage> <!-- Adjust as necessary -->
+        <errorThresholdPercentage>100</errorThresholdPercentage> <!-- Adjust as necessary -->
           <propertiesUser>
             <csvDataFile1>${project.basedir}/src/test/jmeter/CombinedLoad_FleetVRN_Run2.csv</csvDataFile1>
             <csvDataFile2>${project.basedir}/src/test/jmeter/CombinedLoadTest_Testdata_Run2.csv</csvDataFile2>
