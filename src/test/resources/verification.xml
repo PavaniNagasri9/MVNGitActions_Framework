@@ -1,5 +1,200 @@
 <testSet>
     <nthPercRespTimeTest>
+        <testName>S01_T01_Breakdown_Launch URL - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T01_Breakdown_Launch URL</transactionName>
+        <regexp />n
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T01_Breakdown_Launch URL - Pass Rate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T01_Breakdown_Launch URL</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T02_Breakdown_click Advanced search - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T02_Breakdown_click Advanced search</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T02_Breakdown_click Advanced search - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T02_Breakdown_click Advanced search</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T03_Breakdown_Select Entittlements - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T03_Breakdown_Select Entittlements</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T03_Breakdown_Select Entittlements - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T03_Breakdown_Select Entittlements</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T04_Breakdown_Enter and Search UnlistedSLV - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T04_Breakdown_Enter and Search UnlistedSLV</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T04_Breakdown_Enter and Search UnlistedSLV - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T04_Breakdown_Enter and Search UnlistedSLV</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T05_Breakdown_Enter Memberdetails - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T05_Breakdown_Enter Memberdetails</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T05_Breakdown_Enter Memberdetails - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T05_Breakdown_Enter Memberdetails</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T06_Breakdown_Assistance - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T06_Breakdown_Assistance</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T06_Breakdown_Assistance - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T06_Breakdown_Assistance</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T07_Breakdown_Enter and search Location - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T07_Breakdown_Enter and search Location</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S01_T07_Breakdown_Enter and search Location - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T07_Breakdown_Enter and search Location</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T08_Breakdown_Send BreakdownTask - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T08_Breakdown_Send BreakdownTask</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+    <passedTransactionsTest>
+        <testName>S01_T08_Breakdown_Send BreakdownTask - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T08_Breakdown_Send BreakdownTask</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T09_Breakdown and HireCar_HIREcar schedule - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T09_Breakdown and HireCar_HIREcar schedule</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S01_T09_Breakdown and HireCar_HIREcar schedule - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T09_Breakdown and HireCar_HIREcar schedule</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T10_Breakdown and HireCar_Find mobility details - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T10_Breakdown and HireCar_Find mobility details</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S01_T10_Breakdown and HireCar_Find mobility details - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T10_Breakdown and HireCar_Find mobility details</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T11_Breakdown and HireCar_Enter Driver details - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T11_Breakdown and HireCar_Enter Driver details</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+      <passedTransactionsTest>
+        <testName>S01_T11_Breakdown and HireCar_Enter Driver details - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T11_Breakdown and HireCar_Enter Driver details</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+    <nthPercRespTimeTest>
+        <testName>S01_T12_Breakdown and HireCar_Authorise - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T12_Breakdown and HireCar_Authorise</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S01_T12_Breakdown and HireCar_Authorise - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T12_Breakdown and HireCar_Authorise</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S01_T13_Breakdown and HireCar_Save Mobility task - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S01_T13_Breakdown and HireCar_Save Mobility task</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S01_T13_Breakdown and HireCar_Save Mobility task - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S01_T13_Breakdown and HireCar_Save Mobility task</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
         <testName>S02_T01_launch FleetUI - 90 Percentile response time</testName>
         <description>Verify 90th percentile</description>
         <transactionName>S02_T01_launch FleetUI</transactionName>
@@ -7,7 +202,13 @@
         <percentile>90</percentile>
         <maxRespTime>30000</maxRespTime>
     </nthPercRespTimeTest>
-    
+     <passedTransactionsTest>
+        <testName>S02_T01_launch FleetUI - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S02_T01_launch FleetUI</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
 <nthPercRespTimeTest>
         <testName>S02_T02_Search FleetType - 90 Percentile response time</testName>
         <description>Verify 90th percentile</description>
@@ -16,7 +217,13 @@
         <percentile>90</percentile>
         <maxRespTime>30000</maxRespTime>
     </nthPercRespTimeTest>
-     
+     <passedTransactionsTest>
+        <testName>S02_T02_Search FleetType - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S02_T02_Search FleetType</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
 <nthPercRespTimeTest>
         <testName>S02_T03_CheckBoookedvehicle Details - 90 Percentile response time</testName>
         <description>Verify 90th percentile</description>
@@ -25,5 +232,176 @@
         <percentile>90</percentile>
         <maxRespTime>30000</maxRespTime>
     </nthPercRespTimeTest>
-    
+     <passedTransactionsTest>
+        <testName>S02_T03_CheckBoookedvehicle Details - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S02_T03_CheckBoookedvehicle Details</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T01_RetailerVOR_Launch - /retailer-select.html - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T01_RetailerVOR_Launch - /retailer-select.html</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T01_RetailerVOR_Launch - /retailer-select.html - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T01_RetailerVOR_Launch - /retailer-select.html</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T02_RetailerVOR_ClickBooked-Selectvehicle - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T02_RetailerVOR_ClickBooked-Selectvehicle</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T02_RetailerVOR_ClickBooked-Selectvehicle - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T02_RetailerVOR_ClickBooked-Selectvehicle</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T03_RetailerVOR_Checkout - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T03_RetailerVOR_Checkout</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T03_RetailerVOR_Checkout - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T03_RetailerVOR_Checkout</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T04_RetailerVOR_upload - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T04_RetailerVOR_upload</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T04_RetailerVOR_upload  - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T04_RetailerVOR_upload</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T05_RetailerVOR_Checkout-StartHire - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T05_RetailerVOR_Checkout-StartHire</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T05_RetailerVOR_Checkout-StartHire - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T05_RetailerVOR_Checkout-StartHire</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T06_RetailerVOR_Refresh screen - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T06_RetailerVOR_Refresh screen</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T06_RetailerVOR_Refresh screen - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T06_RetailerVOR_Refresh screen</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T07_RetailerVOR_Relaunch - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T07_RetailerVOR_Relaunch</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T07_RetailerVOR_Relaunch - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T07_RetailerVOR_Relaunch</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T08_RetailerVOR_Onhireand Checkin - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T08_RetailerVOR_Onhireand Checkin</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T08_RetailerVOR_Onhireand Checkin - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T08_RetailerVOR_Onhireand Checkin</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T09_RetailerVOR_Checkin-upload - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T09_RetailerVOR_Checkin-upload</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T09_RetailerVOR_Checkin-upload - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T09_RetailerVOR_Checkin-upload</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S03_T10_RetailerVOR_Checkin-Endhire - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S03_T10_RetailerVOR_Checkin-Endhire</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S03_T10_RetailerVOR_Checkin-Endhire - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S03_T10_RetailerVOR_Checkin-Endhire</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
+<nthPercRespTimeTest>
+        <testName>S04_T01_Closebreakdown - 90 Percentile response time</testName>
+        <description>Verify 90th percentile</description>
+        <transactionName>S04_T01_Closebreakdown</transactionName>
+        <regexp />
+        <percentile>90</percentile>
+        <maxRespTime>30000</maxRespTime>
+    </nthPercRespTimeTest>
+     <passedTransactionsTest>
+        <testName>S04_T01_Closebreakdown - PassRate</testName>
+        <description>Verify Pass Rate</description>
+        <transactionName>S04_T01_Closebreakdown</transactionName>
+        <regexp />
+        <allowedPercentOfFailedTransactions>10</allowedPercentOfFailedTransactions>
+    </passedTransactionsTest>
    </testSet>
